@@ -9,5 +9,5 @@ class CheesePreprocessor(Preprocessor):
         """
         
         if 'source' in cell and cell.cell_type == "markdown":
-            cell.source = '**cheese** ' + cell.source
+            cell.source = f'**cheese** {cell.source}'
         return cell, resources
